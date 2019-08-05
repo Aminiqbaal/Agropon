@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PembelianActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/shadow">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alamat_title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Alamat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/alamat_title"
+                app:layout_constraintTop_toBottomOf="@+id/alamat_title"
+                tools:text="iki alamate" />
+
+            <TextView
+                android:id="@+id/metode_title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Metode Pembayaran"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+            <RadioGroup
+                android:id="@+id/metode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/metode_title">
+
+                <RadioButton
+                    android:id="@+id/bca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bca" />
+
+                <RadioButton
+                    android:id="@+id/bni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bni" />
+
+                <RadioButton
+                    android:id="@+id/bri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bri" />
+
+                <RadioButton
+                    android:id="@+id/mandiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mandiri" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/kurir_title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Kurir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/metode" />
+
+            <RadioGroup
+                android:id="@+id/kurir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kurir_title">
+
+                <RadioButton
+                    android:id="@+id/jne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/jne"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/jnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/jnt" />
+
+                <RadioButton
+                    android:id="@+id/tiki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/tiki" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pesanan_title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Daftar Pesanan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kurir" />
+
+            <TextView
+                android:id="@+id/nama_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pesanan_title"
+                tools:text="iki barange" />
+
+            <TextView
+                android:id="@+id/harga_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nama_barang"
+                tools:text="iki rego barange siji" />
+
+            <Button
+                android:id="@+id/decrement"
+                style="@style/TitleText"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/minus_button_bg"
+                android:text="-"
+                android:enabled="false"
+                app:layout_constraintBottom_toTopOf="@+id/harga_barang"
+                app:layout_constraintEnd_toStartOf="@+id/jumlah"
+                app:layout_constraintTop_toTopOf="@+id/nama_barang" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/decrement"
+                app:layout_constraintEnd_toStartOf="@+id/increment"
+                app:layout_constraintTop_toTopOf="@+id/decrement"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/increment"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/plus_button_bg"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/decrement"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/decrement" />
+
+            <TextView
+                android:id="@+id/rincian_title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Rincian Pembayaran"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/harga_barang" />
+
+            <TextView
+                android:id="@+id/harga_total_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Total Harga Barang"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/rincian_title"
+                app:layout_constraintTop_toBottomOf="@+id/rincian_title" />
+
+            <TextView
+                android:id="@+id/harga_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/harga_total_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rincian_title"
+                tools:text="iki rego" />
+
+            <TextView
+                android:id="@+id/harga_ongkir_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ongkos Kirim"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/harga_total_title"
+                app:layout_constraintTop_toBottomOf="@+id/harga_total_title" />
+
+            <TextView
+                android:id="@+id/harga_ongkir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/harga_ongkir_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/harga_ongkir_title"
+                tools:text="iki rego" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/pembayaran"
+        android:background="#bebebe"/>
+
+    <TextView
+        style="@style/TitleText"
+        android:id="@+id/pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pay_btn"
+        android:layout_marginLeft="8dp"
+        android:text="Total Pembayaran" />
+
+    <TextView
+        android:id="@+id/harga_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pay_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        tools:text="iki rego" />
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_bg"
+        android:text="Bayar"
+        android:textColor="@color/white"
+        android:enabled="false"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InvoiceActivity"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/bayar_title"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Tagihan" />
+
+    <TextView
+        android:id="@+id/bayar"
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="iki rego"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/invoice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Rekening"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/norek"
+        style="@style/NoRekText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ini norek"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Petunjuk Pembayaran"
+        style="@style/TitleText"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Pada ATM, Pilih Transaksi Lainnya, lalu pilih opsi Transfer.
+                    \n2. Kemudian masukkan Nomor Rekening Tujuan.
+                    \n3. Periksa Jumlah Bayar, lalu selesaikan pembayaran."/>
+
+</LinearLayout>

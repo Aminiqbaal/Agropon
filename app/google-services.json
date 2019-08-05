@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "14776712298",
+    "firebase_url": "https://agropon-7b651.firebaseio.com",
+    "project_id": "agropon-7b651",
+    "storage_bucket": "agropon-7b651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14776712298:android:251aaa9527fcbb59",
+        "android_client_info": {
+          "package_name": "com.example.desproitats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14776712298-j8ck7eu4k22pupqgsvgl7p23gaov8jdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.desproitats",
+            "certificate_hash": "403c33c9d9be59231f783e25a44e7ac47d769b25"
+          }
+        },
+        {
+          "client_id": "14776712298-2s7s5ng6q29t3j7gqkvs6527h1g93i81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxQm7Sf94xRtB5zqrClMlPNcJRznmFq7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14776712298-2s7s5ng6q29t3j7gqkvs6527h1g93i81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

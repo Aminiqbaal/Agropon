@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/budidaya"
+    android:title="Budidaya"
+    android:icon="@drawable/ic_budidaya"/>
+    <item
+        android:id="@+id/pengolahan"
+        android:title="Pengolahan"
+        android:icon="@drawable/ic_pengolahan"/>
+    <item
+        android:id="@+id/hasil_budidaya"
+        android:title="Hasil Budidaya"
+        android:icon="@drawable/ic_hasilbudidaya"/>
+    <item
+        android:id="@+id/hasil_olahan"
+        android:title="Hasil Olahan"
+        android:icon="@drawable/ic_hasilolahan"/>
+    <item
+        android:id="@+id/user"
+        android:title="Akun"
+        android:icon="@drawable/ic_akun"/>
+</menu>
